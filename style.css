@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Nunito:wght@400;500;600;700&display=swap');
+
 :root {
-  --bg: #fffdd0;
-  --blue: #1a3fa0;
+  --bg: #FAF1EF;
+  --text: #4F3E3A;
+  --heading: #432B28;
+  --link: #89584E;
 }
 
 * { box-sizing: border-box; }
@@ -8,9 +12,16 @@
 body {
   margin: 0;
   background: var(--bg);
-  color: var(--blue);
-  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
   line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700;
+  color: var(--heading);
 }
 
 main {
@@ -31,16 +42,16 @@ header {
   height: 160px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid var(--blue);
+  border: 3px solid var(--link);
 }
 
 h1 { margin: 0; font-size: 2.2rem; }
-h2 { border-bottom: 1px solid var(--blue); padding-bottom: 0.25rem; }
+h2 { border-bottom: 1px solid var(--link); padding-bottom: 0.25rem; }
 
 .tagline { margin: 0.25rem 0 0.5rem; }
 .links { margin: 0; }
 
-a { color: var(--blue); }
+a { color: var(--link); }
 
 @media (max-width: 560px) {
   header { flex-direction: column; text-align: center; }
